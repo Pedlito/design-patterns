@@ -2,6 +2,7 @@ from objetos_abstractos import FabricaAbstracta, Silla, Mesa, Cama
 import productos
 
 class FabricaModerna(FabricaAbstracta):
+    """Fabrica para productos Modernos"""
 
     def crearSilla(self) -> Silla:
         return productos.SillaModerna()
@@ -13,6 +14,7 @@ class FabricaModerna(FabricaAbstracta):
         return productos.CamaModerna()
     
 class FabricaVictoriana(FabricaAbstracta):
+    """Fabrica para productos Victorianos"""
 
     def crearSilla(self) -> Silla:
         return productos.SillaVictoriana()
@@ -24,6 +26,7 @@ class FabricaVictoriana(FabricaAbstracta):
         return productos.CamaVictoriana()
     
 class FabricaArtDeco(FabricaAbstracta):
+    """Fabrica para productos ArtDeco"""
 
     def crearSilla(self) -> Silla:
         return productos.SillaArtDeco()

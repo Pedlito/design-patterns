@@ -2,6 +2,7 @@ from abc import ABC, abstractmethod
 from objetos_abstractos import Silla, Mesa, Cama
 
 class SillaArtDeco(Silla):
+    """Clase que hereda de Silla y define como es una silla ArtDeco"""
 
     estilo = 'ArtDeco'
     patas = 4
@@ -11,6 +12,7 @@ class SillaArtDeco(Silla):
         print('Información:\n\tEstilo:', self.estilo, '\n\tColor:', self.color, '\n\tPatas:', self.patas)
 
 class MesaArtDeco(Mesa):
+    """Clase que hereda de Mesa y define como es una mesa ArtDeco"""
 
     estilo = 'ArtDeco'
     patas = 4
@@ -20,6 +22,7 @@ class MesaArtDeco(Mesa):
         print('Información:\n\tEstilo:', self.estilo, '\n\tColor:', self.color, '\n\tPatas:', self.patas)
 
 class CamaArtDeco(Cama):
+    """Clase que hereda de Cama y define como es una cama ArtDeco"""
 
     estilo = 'ArtDeco'
     patas = 4
